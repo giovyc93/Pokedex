@@ -29,12 +29,33 @@ export default function PokeAPI() {
 
   return (
     <>
-      <div className="header">
+    <div className="header">
+    <h1>Pokedex</h1>
+    <nav>
+    <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>Lista</li>
+                        </a>
 
+                    </ul>
+                </div>
+        <a href="#">Home</a>
+        <a href="#">Lista</a>
+      </nav>
 
+    
       </div>
       <div className="back">
         <div className="card">
+
           <div className="TopLeft">
             <div className="circleA"></div>
             <div className="circleB"></div>
@@ -61,6 +82,7 @@ export default function PokeAPI() {
             <div className="type">{Type}</div>
           </nav>
          
+
 
           
 
@@ -101,7 +123,6 @@ export default function PokeAPI() {
       <footer>
         <p></p>
       </footer>
-
     </>
   );
 }
