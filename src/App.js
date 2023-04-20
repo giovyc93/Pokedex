@@ -58,14 +58,13 @@ export default function PokeAPI() {
           </div>
           
           <nav>
-            <a href="#">Home</a>
-            <a href="#">Lista</a>
+            <div className="type">{Type}</div>
           </nav>
-          <div className="type">{Type}</div>
+         
 
           
 
-          <button onClick={Search}>Search</button>
+          
         </div>
         <div className="card2">
           <div className="top">
@@ -75,7 +74,7 @@ export default function PokeAPI() {
             <label For="">Cerca il tuo pokemon</label>
             <div className="input">
 
-            <input type="text" onChange={Typename} value={name} />
+            <input type="text" className="testo" onChange={Typename} value={name} />
 
             </div>
             <div className="fake">
@@ -89,7 +88,7 @@ export default function PokeAPI() {
                 <div className="btn-useless"></div>
                 <div className="btn-useless"></div>
               </div>
-              <button className="enter"></button>
+              <button className="enter" onClick={Search}>Cerca</button>
             </div>
             <div className="second-bottom">
               <div className="btn-useless2"></div>
