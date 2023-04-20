@@ -30,7 +30,27 @@ export default function PokeAPI() {
   return (
     <>
     <div className="header">
-  
+    <h1>Pokedex</h1>
+    <nav>
+    <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>Lista</li>
+                        </a>
+
+                    </ul>
+                </div>
+        <a href="#">Home</a>
+        <a href="#">Lista</a>
+      </nav>
+
     
       </div>
       <div className="back">
