@@ -1,18 +1,46 @@
-import { useState } from "react";
-import React from "react";
-import PokemonList from "./PokemonList";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./index.css"
+export default function PokeAPI() {
+  const [name, setname] = useState("");
+  const [Find, setFind] = useState("pikachu");
+  const [Img, setImg] = useState("");
+  const [Type, setType] = useState("");
 
-function App() {
-  const [pokemon, setPokemon] = useState(["bulbasaur", "charmender"])
-  axios.get("https://pokeapi.co/api/v2/pokemon/").then(res => {
-    setPokemon(res.data.results.map(p=>p.name))
-  })
+  useEffect(() => {
+    async function getData() {
+      let res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${Find}`);
+      console.log(res);
+      setImg(res.data.sprites.other.home.front_default);
+      setType(res.data.types[0].type.name);
+    }
+
+    getData();
+  }, [Find]);
+
+  const Typename = (event) => {
+    setname(event.target.value);
+  };
+
+  const Search = () => {
+    if (name !== "") setFind(name);
+    setname("");
+  };
+
   return (
-    <div >
-      <PokemonList pokemon={pokemon} />
-    </div>
+    <>
+      <div className="back">
+        <div className="card">
+          <img src={`${Img}`} alt="" />
+          <div className="name">{Find.toUpperCase()}</div>
+
+          <div className="type">{Type}</div>
+
+          <input type="text" onChange={Typename} value={name} />
+
+          <button onClick={Search}>Search</button>
+        </div>
+      </div>
+    </>
   );
 }
-
-export default App;
