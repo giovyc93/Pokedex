@@ -10,6 +10,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: flex-end;
+    gap: 0.1vh;
 }
 
 .card {
@@ -19,8 +20,8 @@ body {
     height: 90vh;
     gap: 5.2vh;
     align-items: center;
-    border: 1px solid red;
-    background-color: red;
+    
+    background-color: hwb(1 30% 13% / 0.875);
     border-radius: 5vh;
     border: 1px solid black;
     z-index: 1;
@@ -168,7 +169,7 @@ nav>a:hover {
     height: 80vh;
     gap: 5.2vh;
     border: 1px solid red;
-    background-color: red;
+    background-color: hwb(1 30% 13% / 0.875);
     border-radius: 5vh;
     border: 1px solid black;
     z-index: 1;
