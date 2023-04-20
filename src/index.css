@@ -3,39 +3,40 @@
     width: 200vh;
     height: 100vh;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     width: 70vh;
     height: 90vh;
-  gap: 7vh;
-    align-items:center;
+    gap: 7vh;
+    align-items: center;
     border: 1px solid red;
     background-color: red;
     border-radius: 5vh;
-    
 }
-.card img{
+
+.card img {
     height: 30%;
     width: 40%;
     border: 1px solid yellow;
     background-color: aliceblue;
-    
 }
-.name{
+
+.name {
     height: 3%;
-    width: 100%; 
+    width: 100%;
     text-align: center;
     font-weight: bolder;
     color: white;
     border: 1px solid yellow;
-    
 }
-.type{
+
+.type {
     height: 3%;
-    width: 100%; 
+    width: 100%;
     text-align: center;
     font-weight: bolder;
     color: white;
