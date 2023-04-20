@@ -5,6 +5,7 @@ body {
 }
 
 .back {
+
     display: flex;
     width: 200vh;
     height: 100vh;
@@ -266,4 +267,44 @@ nav>a:hover {
     width: 60%;
     height: 50%;
     border: 1px solid;
+}
+=======
+  display: flex;
+  width: 200vh;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 70vh;
+  height: 90vh;
+  gap: 7vh;
+  align-items: center;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 5vh;
+}
+.card img {
+  height: 30%;
+  width: 40%;
+  border: 1px solid yellow;
+  background-color: aliceblue;
+}
+.name {
+  height: 3%;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  border: 1px solid yellow;
+}
+.type {
+  height: 3%;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  border: 1px solid yellow;
 }
