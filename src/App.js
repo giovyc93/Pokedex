@@ -72,8 +72,8 @@ export default function PokeAPI() {
 <button className="enter"></button>
 </div>
 <div className="second-bottom">
-<div className="btn useless2"></div>
-<div className="btn useless3"></div>
+<div className="btn-useless2"></div>
+<div className="btn-useless3"></div>
 </div>
           </div>
         </div>
