@@ -29,18 +29,79 @@ export default function PokeAPI() {
 
   return (
     <>
+      <div className="header">
+
+
+      </div>
       <div className="back">
         <div className="card">
-          <img src={`${Img}`} alt="" />
-          <div className="name">{Find.toUpperCase()}</div>
+          <div className="TopLeft">
+            <div className="circleA"></div>
+            <div className="circleB"></div>
+            <div className="circleB"></div>
+            <div className="circleB"></div>
+          </div>
+          <div className="screenLeft">
+            <div className="grayCont">
+              <div className="graybtn"></div>
+              <div className="graybtn"></div>
+            </div>
+            <img src={`${Img}`} alt="" />
+            <div className="redContainer">
+            <div className="redBtn"></div>
+            <div className="hamburger">
+              <div className="ham1"></div>
+              <div className="ham1"></div>
+              <div className="ham1"></div>
+            </div>
+            </div>
+          </div>
+          
+          <nav>
+            <div className="type">{Type}</div>
+          </nav>
+         
 
-          <div className="type">{Type}</div>
+          
 
-          <input type="text" onChange={Typename} value={name} />
-
-          <button onClick={Search}>Search</button>
+          
         </div>
+        <div className="card2">
+          <div className="top">
+          <div className="name">{Find.toUpperCase()}</div>
+          </div>
+          <div className="medium">
+            <label For="">Cerca il tuo pokemon</label>
+            <div className="input">
+
+            <input type="text" className="testo" onChange={Typename} value={name} />
+
+            </div>
+            <div className="fake">
+              <div className="btn-fake"></div>
+              <div className="btn-fake"></div>
+            </div>
+          </div>
+          <div className="bottom">
+            <div className="first-bottom">
+              <div className="useless-cont">
+                <div className="btn-useless"></div>
+                <div className="btn-useless"></div>
+              </div>
+              <button className="enter" onClick={Search}>Cerca</button>
+            </div>
+            <div className="second-bottom">
+              <div className="btn-useless2"></div>
+              <div className="btn-useless3"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
+      <footer>
+        <p></p>
+      </footer>
+
     </>
   );
 }
