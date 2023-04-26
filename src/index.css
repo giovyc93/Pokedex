@@ -68,7 +68,6 @@ body {
     padding: 2vh;
     background-color: gray;
     border-radius: 5vh;
-<<<<<<< HEAD
     z-index: -10;  
 }
 .TopLeft{
@@ -79,7 +78,7 @@ body {
   padding-top: 2vh;
 }
 .openPoke{
-    width: 10%;
+    width: 100%;
     height: 5%;
 }
 .circleA{
@@ -105,8 +104,6 @@ body {
   padding: 2vh;
   background-color: gray;
   
-=======
->>>>>>> de14b9b0997446a40cd1fc2a8f09a5920b49d445
 }
 
 .screenLeft img {
